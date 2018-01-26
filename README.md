@@ -2,6 +2,8 @@
 
 TokenizeAttributes allows to define a tokenized attribute.
 
+A before validation is generate on the attribute to set a tokenized value on the attribute
+
 ## Usage
 
 #### Single attribute
