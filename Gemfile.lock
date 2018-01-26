@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    tokenize_attributes (1.0.0)
+    tokenize_attributes (0.1.0)
 
 GEM
   remote: https://rubygems.org/
