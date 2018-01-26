@@ -68,4 +68,22 @@ describe TokenizeAttributes::Attribute, active_record: true do
       end
     end
   end
+
+  context 'change default configuration' do
+    before { TokenizeAttributes.configuration.tokenizer = proc { SecureRandom.uuid } }
+
+    fake_active_record(:klass) do
+      tokenized_attribute :authentication_token
+    end
+
+    it 'calls the new randomizer' do
+      expect(SecureRandom).to receive(:uuid).once
+      klass.create
+    end
+
+    it 'does not call the defaut randomizer' do
+      expect(SecureRandom).to_not receive(:hex)
+      klass.create
+    end
+  end
 end

@@ -4,6 +4,14 @@ TokenizeAttributes allows to define a tokenized attribute.
 
 A before validation is generate on the attribute to set a tokenized value on the attribute
 
+## Configuration
+
+```ruby
+TokenizeAttributes.configure do |config|
+  config.tokenizer = proc { SecureRandom.hex }
+end
+```
+
 ## Usage
 
 #### Single attribute
