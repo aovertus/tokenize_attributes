@@ -18,7 +18,7 @@ end
 
 ```ruby
 class Object
-  tokenized_attribute :authentication_token
+  tokenized_attribute :attrb1
 end
 ```
 
@@ -35,7 +35,7 @@ end
 
 ```ruby
 class Object
-    tokenized_attribute :authentication_token
+    tokenized_attributes :attrb1, :attrb2
 end
 ```
 
