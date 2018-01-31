@@ -14,24 +14,7 @@ end
 
 ## Usage
 
-#### Single attribute
-
-```ruby
-class Object
-  tokenized_attribute :attrb1
-end
-```
-
-Override tokenizer proc
-
-```ruby
-class Object
-    tokenized_attribute :attrb1, proc { SecureRandom.uuid }
-end
-```
-
-
-#### Multiple attributes
+#### Tokenized attributes
 
 ```ruby
 class Object
