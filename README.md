@@ -4,6 +4,12 @@ TokenizeAttributes allows to define a tokenized attribute.
 
 A before validation is generate on the attribute to set a tokenized value on the attribute
 
+## Installation
+
+```ruby
+  gem 'tokenize_attributes', '~> 0.1.1'
+```
+
 ## Configuration
 
 ```ruby
